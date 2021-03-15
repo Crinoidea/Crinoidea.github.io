@@ -1,7 +1,7 @@
 @import "base/variables";
 @import "base/mixins";
 
-body {
+* {
 	font-family: 'Museo Sans', sans-serif;
 }
 .container {
@@ -13,3 +13,4 @@ body {
 @import "blocks/header";
 @import "blocks/buttons";
 
+@import "blocks/media"
