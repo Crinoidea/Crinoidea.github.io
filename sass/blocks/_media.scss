@@ -94,24 +94,19 @@
 		flex-direction: column;
 		&__logo { 
 			width: 200px;
-			
 		}
 		&__official {
 			display: none;
 		}
 		&__contacts {
-			align-items: center;
-		}
-		&__phone {
-			font-size: 15px;
-			margin-top: 15px;
+			display: none;
 		}
 	}
 	.promo {
 		background-position: 5%;
 		padding-bottom: 60px;
 		&__wrapper {
-			margin-top: 60px;
+			margin-top: 80px;
 		}
 		&__icons {
 			width: 300px;
