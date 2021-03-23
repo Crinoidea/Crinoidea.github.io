@@ -5,6 +5,14 @@
 	.promo {
 		background-position: 30%;
 	}
+	.carousel {
+		&__inner {
+			width: 30%;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 
 
