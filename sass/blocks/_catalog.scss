@@ -41,7 +41,7 @@
 		margin-top: 60px;
 		display: none;	
 		justify-content: space-between;
-		flex-wrap: wrap;
+		flex-wrap: wrap; /* всё, что не помещается переносится на следующую строку */
 		&_active {
 			display: flex;
 		}
