@@ -135,6 +135,22 @@
 			font-size: 15px;
 		}
 	}
+	.review {
+		&__wrapper {
+			flex-direction: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&__items {
+			margin-top: 20px;
+			margin-left: 0px;
+			text-align: center;
+		}
+		&__descr {
+			text-align: left;
+		}
+	}
 }
 
 
