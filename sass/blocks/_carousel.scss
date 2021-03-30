@@ -6,6 +6,7 @@
 		margin: 0 auto;
 	}
 	.prev, .next {
+		background: transparent; /* удаляет белый фон у тега button */
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -28,3 +29,24 @@
 		margin: 0 auto;
 	}
 }
+.tns-nav {
+	position: absolute;
+	left: 50%;
+	bottom: -5%;
+	transform: translateX(-50%); 
+	button {
+		margin: 0 15px;
+		height: 15px;
+		width: 15px;
+		border-radius: 100%;
+		border: 1px solid grey;
+		cursor: pointer;
+	}
+	.tns-nav-active {
+		background-color: $main-color;
+		border: 1px solid $main-color;
+		transition: 1s;
+		
+	}
+}
+	

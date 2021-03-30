@@ -17,13 +17,23 @@
 }); */
 
 /* Вариант слайдеров с помощью TinySlider */
-var slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
+const slider = tns({
+	container: '.carousel__inner',
+	items: 1,
+	slideBy: 'page',
+	autoplay: false,
 	controls: false,
-	nav: false,
+	speed: 800,
+	navPosition: "bottom",
+	responsive: {
+		320: {
+			nav: true
+		},
+
+		992: {
+			nav: false
+		}
+	}
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
