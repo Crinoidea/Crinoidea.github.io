@@ -53,7 +53,6 @@
 @media (max-width: 767px) {
 	.container {
 		max-width: 520px;
-
 	}
 	.header {
 		&__logo { 
@@ -151,6 +150,15 @@
 			text-align: left;
 		}
 	}
+	.footer {
+		&__info {
+			width: 360px;
+			height: 250px;
+		}
+		&__addr {
+			font-size: 18px;
+		}
+	}
 }
 
 
@@ -211,6 +219,11 @@
 		}
 		&__tab {
 			margin-top: 5px;
+		}
+	}
+	.footer {
+		&__info {
+			width: 100%;
 		}
 	}
 }
