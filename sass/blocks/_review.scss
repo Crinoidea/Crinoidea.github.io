@@ -5,9 +5,9 @@
 		justify-content: start;
 		align-items: flex-start;
 		margin-top: 102px;
-	}
-	&__wrapper__margin {
-		margin-top: 70px;
+		&_mt70 { /* модификатор через _ */
+			margin-top: 70px;
+		}
 	}
 	&__photo {
 		width: 169px;

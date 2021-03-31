@@ -152,7 +152,7 @@
 	}
 	.footer {
 		&__info {
-			width: 360px;
+			width: 100%;
 			height: 250px;
 		}
 		&__addr {
@@ -219,11 +219,6 @@
 		}
 		&__tab {
 			margin-top: 5px;
-		}
-	}
-	.footer {
-		&__info {
-			width: 100%;
 		}
 	}
 }
