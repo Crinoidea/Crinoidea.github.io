@@ -127,4 +127,38 @@ document.querySelector('.next').addEventListener('click', function () {
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
 
+
+
+
+
+
+
+	/* Модальные окна c помощью jQuery */
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay, #consultation').fadeIn('slow');
+	});
+
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+	});
+	
+	$('.button_mini').each(function(i)  {
+		$(this).on('click', function() {
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
+		});
+	});
+
+/* 	fadeIn - появление элемента
+	fadeOut - исчезание элемента
+	кликаем на кнопки с data-modal=consultationб включаются или выключаются блоки с .overlay, #consultation, #order, #thanks
+	slow - скорость анимации
+
+	При клике на .button_mini открывается модальное окно
+	each для каждой кнопки с определенным элементом i 
+	this - кнопка на которую нажали
+	внутри модального окна #order есть .modal__descr, в который записываем другой текст из .catalog-item__subtitle
+	eq(i) - заменяем текст для определенного элемента  */
+
 })(jQuery);
