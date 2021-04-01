@@ -161,4 +161,42 @@ document.querySelector('.next').addEventListener('click', function () {
 	внутри модального окна #order есть .modal__descr, в который записываем другой текст из .catalog-item__subtitle
 	eq(i) - заменяем текст для определенного элемента  */
 
+
+
+
+
+
+	/* Валидация форм */
+
+	function validateForms(form){
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: 'required',
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, введите своё имя",
+					minlength: jQuery.validator.format("Введите {0} символа")
+				},
+				phone: "Пожалуйста, введите свой номер телефона",
+				email: {
+				required: "Пожалуйста, введите свой почтовый адрес",
+				email: "Неправильно введён почтовый адрес"
+				}
+			}
+		});
+	};
+
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
+
 })(jQuery);
