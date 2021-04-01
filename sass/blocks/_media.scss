@@ -209,6 +209,9 @@
 	}
 	.feed-form {
 		width: 250px;
+		&_mt25 {
+			margin-top: 25px;
+		}
 	}
 	.tns-nav {
 		bottom: -30%;
@@ -219,6 +222,18 @@
 		}
 		&__tab {
 			margin-top: 5px;
+		}
+	}
+	.modal {
+		width: 290px;
+		padding: 31px 10px;
+		&__descr {
+			font-size: 13px;
+		}
+		&__close {
+			top: -26px;
+			right: 0;
+			cursor: none;
 		}
 	}
 }
