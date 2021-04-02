@@ -199,4 +199,11 @@ document.querySelector('.next').addEventListener('click', function () {
 	validateForms('#consultation form');
 	validateForms('#order form');
 
+/* #consultation form - в блоке с id consultation находит форму
+#consultation-form - задаем id непосредственно <form>, поскольку родительский блок - это контейнер
+Обязательно нужно указывать type="email" и т.п., посколько выше идёт отсылка к этому атрибуту
+messages: - сообщения, которые появляются, если поле не заполненое
+Застилизовать всплывающие сообщения - .error, label.error, эти классы можно так же поменять (см. документацию) 
+В конце подставляем классы под универсальную функцию*/
+
 })(jQuery);
