@@ -213,10 +213,29 @@ messages: - сообщения, которые появляются, если п
 
 /* Маска ввода номера на сайте */
 
-$('input[name=phone]').mask("+7 (999) 999-9999");
+	$('input[name=phone]').mask("+7 (999) 999-9999");
 
 /* Подключаем jquery.maskedinput.min.js
 Для корректной работы удаляем у <input> - type='number' */
+
+
+
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
+
 
 
 })(jQuery);
