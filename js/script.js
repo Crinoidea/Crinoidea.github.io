@@ -220,6 +220,7 @@ messages: - сообщения, которые появляются, если п
 
 
 
+/* Отправка данных на почту ? */
 	$('form').submit(function(e) {
 		e.preventDefault();
 		$.ajax({
@@ -235,6 +236,39 @@ messages: - сообщения, которые появляются, если п
 		});
 		return false;
 	});
+
+
+
+
+
+
+
+/* Smooth scroll and pageup */
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+/* window - все окно браузера
+scroll - слежение за скроллингом страницы
+function () - во время скролла будет происходить функция
+if ($(this).scrollTop() > 1600) - если у страницы будет отступ от верха 1600рх при скроллинге, то элемент появляется
+$('.pageup').fadeOut(); - если пользователь не проскроллил 1600рх, то элемент не появляется */
+
+
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
+
+/* "a[href^='#']" - все ссылки с атрибутом, который начинается с решетки
+const _href = $(this).attr("href"); - берём атрибут с href
+$("html, body").animate({scrollTop: $(_href).offset().top+"px"}); - анимация с помощью jquery
+ */
 
 
 
