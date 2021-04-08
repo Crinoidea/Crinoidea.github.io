@@ -29,7 +29,6 @@ const slider = tns({
 		320: {
 			nav: true
 		},
-
 		992: {
 			nav: false
 		}
@@ -270,6 +269,9 @@ const _href = $(this).attr("href"); - берём атрибут с href
 $("html, body").animate({scrollTop: $(_href).offset().top+"px"}); - анимация с помощью jquery
  */
 
+
+/* Подключаем wow.js для создания анимации */
+	new WOW().init();
 
 
 })(jQuery);

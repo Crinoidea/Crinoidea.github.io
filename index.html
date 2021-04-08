@@ -7,6 +7,7 @@
 	<title>Pulsometr</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- подключаем вместо normalize.css -->
 	<link rel="stylesheet" href="css/fonts.css"> <!-- подключаем шрифты -->
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -70,7 +71,7 @@
 					<div class="advantages__descr">Наши сотрудники всегда готовы <br> поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
 				</div>
 				<div class="advantages__item">
-					<img src="icons/advantages_2.png" alt="health">
+					<img src="icons/advantages_2.png" alt="health" class="advantages__icon_animated">
 					<div class="advantages__header">Заботимся о здоровье</div>
 					<div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
 				</div>
@@ -119,8 +120,8 @@
 				<div><img src="img/carousel_2.jpg" alt="slide_2"></div>
 				<div><img src="img/carousel_3.jpg" alt="slide_3"></div>
 			</div>
-			<button type="button" class="prev"><img src="/icons/arrow_left.png"></img></button>
-			<button type="button" class="next"><img src="/icons/arrow_right.png"></img></button>
+			<button type="button" class="prev"><img src="icons/arrow_left.png"></img></button>
+			<button type="button" class="next"><img src="icons/arrow_right.png"></img></button>
 		</div>
 	</section>
 	
@@ -444,7 +445,7 @@
 	<section class="review">
 		<div class="container">
 			<h2 class="header_repeat">отзывы клиентов</h2>
-			<div class="review__wrapper review__wrapper_mt70">
+			<div class="review__wrapper review__wrapper_mt70 animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/review_1.png" alt="review_Irina" class="review__photo">
 				<div class="review__items">
 					<h2 class="review__header">Ирина Иванченко</h2>
@@ -457,7 +458,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="review__wrapper">
+			<div class="review__wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/review_2.png" alt="review_Ivan" class="review__photo">
 				<div class="review__items">
 					<h2 class="review__header">Иван Сёмочкин</h2>
@@ -466,7 +467,7 @@
 					С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
 				</div>
 			</div>
-			<div class="review__wrapper">
+			<div class="review__wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/review_3.png" alt="review_Julia" class="review__photo">
 				<div class="review__items">
 					<h2 class="review__header">Юлия Дашкина</h2>
@@ -549,6 +550,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
