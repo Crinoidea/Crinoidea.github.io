@@ -136,20 +136,23 @@
 				margin-right: 20px; /* изначально активный класс будет иметь 20 px */
 			}
 		}
-		&__list {
+		&__second {
 			position: relative;
 			width: 50%; /* половина ширины от .wrapper */
 			margin-left: 20px; 
 			transform: translateX(0%); /* когда элемент активен, то он двигается */
 			transition: 0.5s all; /* плавная анимация */
 			padding-right: 20px; /* чтобы можно было выровнять контент */
-			padding-left: 19px; /* 14px до квадратика и 5px сам квадратик */
-			margin-bottom: 0; /* выключаем стандартные стили ul */
-			list-style-type: none;
 			&_active {
 				transform: translateX(-100%); /* когда элемент не активен, то он стоит на месте */
 				margin-left: 0px; /* как в верхнем классе, только наоборот */
 			}
+		}
+		&__list {
+			position: relative;
+			padding-left: 19px; /* 14px до квадратика и 5px сам квадратик */
+			margin-bottom: 0; /* выключаем стандартные стили ul */
+			list-style-type: none;
 			li {
 				position: relative;
 				font-size: 14px;

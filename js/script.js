@@ -118,7 +118,7 @@ document.querySelector('.next').addEventListener('click', function () {
 			$(this).on('click', function(e) { 
 				e.preventDefault();
 				$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-				$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+				$('.catalog-item__second').eq(i).toggleClass('catalog-item__second_active');
 			})
 		});
 	};
@@ -258,7 +258,7 @@ if ($(this).scrollTop() > 1600) - если у страницы будет отс
 $('.pageup').fadeOut(); - если пользователь не проскроллил 1600рх, то элемент не появляется */
 
 
-	$("a[href^='#']").click(function(){
+	$("a[href='#up']").click(function(){
 		const _href = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
 		return false;
